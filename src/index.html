@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- import jQuery -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <title>Lidir - A simple and editable web directory</title>
+  </head>
+  <body>
+    <header>
+      <form
+        class="searchForm"
+        autocomplete="off"
+        action="https://www.google.com/search"
+        method="get"
+      >
+        <input type="text" name="q" aria-label="search" placeholder="Search…" />
+      </form>
+    </header>
+    <main>
+      <ul class="siteList">
+        <li class="add">
+          <div class="settingButton">
+            <img class="icon" src="images/add.svg" alt="add icon" />
+            <div class="text">Add</div>
+          </div>
+        </li>
+        <li class="editMode">
+          <div class="settingButton">
+            <img class="icon" src="images/edit-mode.svg" alt="edit-mode icon" />
+            <div class="text">Edit</div>
+          </div>
+        </li>
+        <li class="reset">
+          <div class="settingButton">
+            <img class="icon" src="images/reset.svg" alt="reset icon" />
+            <div class="text">Reset</div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <footer>
+      <p>
+        <a href="https://github.com/CyrusYip/lidir">Lidir</a> by
+        <a href="https://github.com/CyrusYip">Cyrus Yip</a>
+      </p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
